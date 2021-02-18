@@ -1,9 +1,9 @@
 //Core
 const path = require('path')
-//NPM
+    //NPM
 const express = require('express')
 const hbs = require('hbs')
-//User
+    //User
 const forecast = require('./utils/forecast')
 const geocode = require('./utils/geocode')
 
@@ -52,12 +52,12 @@ app.get('/weather', (req, res) => {
             error: 'No address was provided, please enter an address!'
         })
     }
-    
-    geocode(address, (error, {latitude, longitude, location} = {}) => {
+
+    geocode(address, (error, { latitude, longitude, location } = {}) => {
         if (error) {
             return res.send({ error })
         }
-        
+
         forecast(latitude, longitude, (error, forecastData) => {
             if (error) {
                 return res.send({ error })
@@ -69,19 +69,6 @@ app.get('/weather', (req, res) => {
                 })
             }
         })
-    })
-})
-
-app.get('/products', (req, res) => {
-    if (!req.query.search) {
-        return res.send({
-            error: 'You must provide a search term'
-        })
-    }
-
-    console.log(req.query.search)
-    res.send({
-        products:[]
     })
 })
 
