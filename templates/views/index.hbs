@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/39581b0884.js" crossorigin="anonymous"></script>
+    <script src="/js/jquery-3.5.1.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="icon" href="/img/weather.png">
+    <title>
+        {{title}}
+    </title>
+</head>
+
+<body>
+    {{>header}}
+
+    <div class="container">
+        <div class="col-md-6 col-sm-6">
+            <div>
+                <h5>Enter an address to know current weather</h5>
+            </div>
+            <form>
+                <div class="form-group has-search">
+                    <span class="fa fa-search form-control-feedback"></span>
+                    <input type="text" class="form-control" placeholder="Search address">
+                </div>
+            </form>
+        </div>
+
+        <div class="col-md-9 forecast-report">
+            <p id="msg_1"></p>
+            <p id="msg_2"></p>
+        </div>
+    </div>
+
+    {{>footer}}
+
+    <script src="/js/client.js"></script>
+</body>
+
+</html>

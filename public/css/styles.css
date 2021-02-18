@@ -1,0 +1,61 @@
+body {
+    color: #333333;
+    /* font-family: 'Times New Roman', Times, serif !important; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    max-width: 100%;
+    min-width: 33%;
+}
+
+.portrait {
+    padding: 1rem;
+    max-width: 40%;
+    max-height: 40%;
+}
+
+.links-bar {
+    padding: 8px 16px;
+    background-color: black;
+}
+
+header div {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+h1 {
+    font-size: 64px !important;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(223, 223, 223);
+    color: black;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+
+.forecast-report {
+    font-size: 16px !important;
+    background-color: rgb(245, 255, 255);
+}
