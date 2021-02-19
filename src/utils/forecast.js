@@ -13,8 +13,8 @@ function forecast(latitude, longitude, callback) {
         } else {
             callback(undefined, {
                 localTime: 'Local time: ' + location.localtime + '.',
-                forecastData: 'Todays temperature is ' + current.temperature + ' degrees out, although it feels like ' + current.feelslike + ' degrees. Chance of raining is ' + current.precip + 'mm because the humidity is ' + current.humidity + '%. The sky is ' + current.cloudcover + '% clouded. Wind is moving at ' + current.wind_speed + 'kmh towards ' + current.wind_dir + ' at an angle of ' + current.wind_degree + ' degrees.',
-                observationTime: 'This forcast was observed at' + current.observation_time + '.'
+                forecastData: 'Todays temperature is ' + current.temperature + ' degrees celsius out, although it feels like ' + current.feelslike + ' degrees celsius. Chance of raining is ' + current.precip + 'mm because the humidity is ' + current.humidity + '%. The sky is ' + current.cloudcover + '% clouded. Wind is moving at ' + current.wind_speed + 'kmh towards ' + current.wind_dir + ' at an angle of ' + current.wind_degree + ' degrees.',
+                observationTime: 'This forcast was observed at ' + current.observation_time + '.'
             })
         }
     })
